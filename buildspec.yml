@@ -1,0 +1,42 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Installing dependencies..."
+      - npm ci
+  pre_build:
+    commands:
+      - echo "Running pre-build checks..."
+      - npm audit --audit-level=high || true
+  build:
+    commands:
+      - echo "Running tests..."
+      - npm test
+  post_build:
+    commands:
+      - echo "Build completed successfully on $(date)"
+      - echo "Generating coverage report..."
+      - cat coverage/lcov-report/index.html 2>/dev/null | head -20 || echo "Coverage report generated in coverage/"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: '.'
+  discard-paths: no
+
+cache:
+  paths:
+    - 'node_modules/**/*'
+
+reports:
+  jest-reports:
+    files:
+      - 'coverage/lcov.info'
+    file-format: LCOV
+  junit-reports:
+    files:
+      - 'coverage/junit.xml'
+    file-format: JUNITXML

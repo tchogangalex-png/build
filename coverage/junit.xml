@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="22" failures="0" errors="0" time="6.911">
+  <testsuite name="Calculator" errors="0" failures="0" skipped="0" timestamp="2026-10-13T00:54:38" time="5.712" tests="22">
+    <testcase classname="Calculator add should add two positive numbers" name="Calculator add should add two positive numbers" time="0.004">
+    </testcase>
+    <testcase classname="Calculator add should add negative numbers" name="Calculator add should add negative numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator add should add positive and negative numbers" name="Calculator add should add positive and negative numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator add should add decimals" name="Calculator add should add decimals" time="0.001">
+    </testcase>
+    <testcase classname="Calculator subtract should subtract two positive numbers" name="Calculator subtract should subtract two positive numbers" time="0.001">
+    </testcase>
+    <testcase classname="Calculator subtract should subtract negative numbers" name="Calculator subtract should subtract negative numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator subtract should handle zero" name="Calculator subtract should handle zero" time="0">
+    </testcase>
+    <testcase classname="Calculator multiply should multiply two positive numbers" name="Calculator multiply should multiply two positive numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator multiply should multiply by zero" name="Calculator multiply should multiply by zero" time="0">
+    </testcase>
+    <testcase classname="Calculator multiply should multiply negative numbers" name="Calculator multiply should multiply negative numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator divide should divide two positive numbers" name="Calculator divide should divide two positive numbers" time="0">
+    </testcase>
+    <testcase classname="Calculator divide should divide decimals" name="Calculator divide should divide decimals" time="0">
+    </testcase>
+    <testcase classname="Calculator divide should throw error for division by zero" name="Calculator divide should throw error for division by zero" time="0.016">
+    </testcase>
+    <testcase classname="Calculator power should calculate power" name="Calculator power should calculate power" time="0">
+    </testcase>
+    <testcase classname="Calculator power should handle zero exponent" name="Calculator power should handle zero exponent" time="0">
+    </testcase>
+    <testcase classname="Calculator power should handle negative exponent" name="Calculator power should handle negative exponent" time="0.001">
+    </testcase>
+    <testcase classname="Calculator sqrt should calculate square root" name="Calculator sqrt should calculate square root" time="0">
+    </testcase>
+    <testcase classname="Calculator sqrt should handle zero" name="Calculator sqrt should handle zero" time="0">
+    </testcase>
+    <testcase classname="Calculator sqrt should throw error for negative number" name="Calculator sqrt should throw error for negative number" time="0.001">
+    </testcase>
+    <testcase classname="Calculator modulo should calculate modulo" name="Calculator modulo should calculate modulo" time="0.001">
+    </testcase>
+    <testcase classname="Calculator modulo should handle zero dividend" name="Calculator modulo should handle zero dividend" time="0">
+    </testcase>
+    <testcase classname="Calculator modulo should throw error for modulo by zero" name="Calculator modulo should throw error for modulo by zero" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
